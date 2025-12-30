@@ -1,0 +1,40 @@
+[tool.poetry]
+package-mode = false
+[project]
+name = "histopathology-cancer-cell-detection"
+version = "0.1.0"
+description = "Deep learning–based system for automatic detection of cancerous cells in histopathological images, combining convolutional neural networks with attention mechanisms and model interpretability techniques."
+authors = [
+    {name = "Cleópatra Santos",email = "cleopatraadryansantos@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "torchvision",
+    "timm",
+    "h5py",
+    "numpy",
+    "pandas",
+    "Pillow",
+    "albumentations",
+    "opencv-python",
+    "matplotlib",
+    "grad-cam",
+    "scikit-learn",
+    "tqdm",
+    "tensorboard",
+    "pyyaml",
+    "wandb",
+    "seaborn",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "*"
+ipykernel = "*"
