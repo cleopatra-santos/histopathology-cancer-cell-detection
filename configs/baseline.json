@@ -1,0 +1,79 @@
+{
+  "experiment_name": "baseline_resnet18",
+  "description": "Baseline ResNet18 pretrained para classificação PCam",
+  
+  "model": {
+    "architecture": "resnet18",
+    "pretrained": true,
+    "num_classes": 1,
+    "dropout": 0.5,
+    "hidden_dim": 256
+  },
+  
+  "data": {
+    "train_x": "data/raw/camelyonpatch_level_2_split_train_x.h5",
+    "train_y": "data/raw/camelyonpatch_level_2_split_train_y.h5",
+    "valid_x": "data/raw/camelyonpatch_level_2_split_valid_x.h5",
+    "valid_y": "data/raw/camelyonpatch_level_2_split_valid_y.h5",
+    "test_x": "data/raw/camelyonpatch_level_2_split_test_x.h5",
+    "test_y": "data/raw/camelyonpatch_level_2_split_test_y.h5",
+    "batch_size": 64,
+    "num_workers": 4
+  },
+  
+  "augmentation": {
+    "hflip": 0.5,
+    "vflip": 0.5,
+    "rotate": 45,
+    "color_jitter": 0.3
+  },
+  
+  "training": {
+    "epochs": 30,
+    "optimizer": "adam",
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "scheduler": "reduce_on_plateau",
+    "scheduler_params": {
+      "mode": "max",
+      "factor": 0.5,
+      "patience": 3,
+      "min_lr": 1e-7
+    },
+    "early_stopping": {
+      "enabled": true,
+      "patience": 7,
+      "min_delta": 0.001
+    },
+    "mixed_precision": true
+  },
+  
+  "loss": {
+    "type": "bce_with_logits",
+    "pos_weight": 1.0
+  },
+  
+  "metrics": [
+    "accuracy",
+    "precision",
+    "recall",
+    "f1",
+    "auc_roc"
+  ],
+  
+  "checkpoints": {
+    "save_dir": "checkpoints/baseline",
+    "save_best_only": true,
+    "monitor": "val_accuracy",
+    "mode": "max"
+  },
+  
+  "logging": {
+    "log_dir": "logs",
+    "tensorboard": true,
+    "log_interval": 100
+  },
+  
+  "seed": 42,
+  "device": "cuda"
+}
