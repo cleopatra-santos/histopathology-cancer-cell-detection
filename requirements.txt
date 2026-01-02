@@ -8,7 +8,7 @@ Pillow
 albumentations
 opencv-python
 matplotlib
-pytorch-grad-cam
+grad-cam
 scikit-learn
 tqdm
 tensorboard
@@ -17,3 +17,4 @@ ipykernel
 pyyaml
 wandb
 seaborn
+pytest
