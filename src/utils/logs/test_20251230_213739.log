@@ -1,0 +1,5 @@
+2025-12-30 21:37:39 | test | INFO | Logger 'test' configurado
+2025-12-30 21:37:39 | test | INFO | Log file: logs\test_20251230_213739.log
+2025-12-30 21:37:39 | test | INFO | Mensagem de info
+2025-12-30 21:37:39 | test | WARNING | Mensagem de warning
+2025-12-30 21:37:39 | test | ERROR | Mensagem de erro

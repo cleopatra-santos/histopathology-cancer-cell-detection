@@ -1,0 +1,5 @@
+2025-12-30 21:37:39 | main | INFO | Logger 'main' configurado
+2025-12-30 21:37:39 | main | INFO | Log file: logs\main_20251230_213739.log
+2025-12-30 21:37:39 | main | INFO | Teste de logging rápido
+2025-12-30 21:37:39 | main | WARNING | Aviso de teste
+2025-12-30 21:37:39 | main | ERROR | Erro de teste
