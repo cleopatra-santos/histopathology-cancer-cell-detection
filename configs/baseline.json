@@ -11,12 +11,12 @@
   },
   
   "data": {
-    "train_x": "data/raw/camelyonpatch_level_2_split_train_x.h5",
-    "train_y": "data/raw/camelyonpatch_level_2_split_train_y.h5",
-    "valid_x": "data/raw/camelyonpatch_level_2_split_valid_x.h5",
-    "valid_y": "data/raw/camelyonpatch_level_2_split_valid_y.h5",
-    "test_x": "data/raw/camelyonpatch_level_2_split_test_x.h5",
-    "test_y": "data/raw/camelyonpatch_level_2_split_test_y.h5",
+    "train_x": "/content/drive/MyDrive/data/raw/camelyonpatch_level_2_split_train_x.h5",
+    "train_y": "/content/drive/MyDrive/data/raw/camelyonpatch_level_2_split_train_y.h5",
+    "valid_x": "/content/drive/MyDrive/data/raw/camelyonpatch_level_2_split_valid_x.h5",
+    "valid_y": "/content/drive/MyDrive/data/raw/camelyonpatch_level_2_split_valid_y.h5",
+    "test_x": "/content/drive/MyDrive/data/raw/camelyonpatch_level_2_split_test_x.h5",
+    "test_y": "/content/drive/MyDrive/data/raw/camelyonpatch_level_2_split_test_y.h5",
     "batch_size": 64,
     "num_workers": 4
   },
