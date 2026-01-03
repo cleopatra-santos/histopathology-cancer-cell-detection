@@ -1,0 +1,37 @@
+# Dados e datasets
+data/
+datasets/
+*.h5
+*.hdf5
+
+# Checkpoints e modeloa
+checkpoints/
+models/
+*.pt
+*.pth
+
+# Logs e outputs
+logs/
+runs/
+*.log
+
+
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# =====================
+# Ambientes
+# =====================
+.env
+.venv
+venv/
+
+# =====================
+# SO / IDE
+# =====================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
