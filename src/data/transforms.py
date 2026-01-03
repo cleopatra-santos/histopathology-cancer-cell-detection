@@ -36,7 +36,7 @@ def get_train_transforms(config=None):
         A.Rotate(limit=45, p=0.3, border_mode=cv2.BORDER_REFLECT),
         A.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1, p=aug_params.get('color_jitter', 0.2)),
         A.GaussianBlur(blur_limit=(3, 5), p=0.1),
-        A.GaussNoise(variance_limit=(5.0, 20.0), p=0.1),
+        A.GaussNoise(var_limit=(5.0, 20.0), p=0.1),
         A.ElasticTransform(alpha=1, sigma=50, p=0.1),
     ])
 
