@@ -1,0 +1,20 @@
+{
+  "model": "MobileNetV2 (HuggingFace)",
+  "dataset_size": {
+    "train": 1000,
+    "val": 200
+  },
+  "training": {
+    "epochs": 3,
+    "batch_size": 32,
+    "learning_rate": 0.0003,
+    "device": "CPU"
+  },
+  "results": {
+    "accuracy": 0.825,
+    "precision": 0.8712871287128713,
+    "recall": 0.8,
+    "f1": 0.8341232227488151
+  },
+  "timestamp": "2026-01-03 15:16:57"
+}
